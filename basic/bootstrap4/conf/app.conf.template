@@ -118,7 +118,7 @@ i18n.default_language = en
 # Module to serve static content such as CSS, JavaScript and Media files
 # Allows Routes like this:
 #  `Static.ServeModule("modulename","public")`
-module.static = github.com/revel/modules/static
+module.static = github.com/wiselike/revel-modules/static
 
 
 
@@ -180,7 +180,7 @@ watch.mode = eager
 # Module to run code tests in the browser
 # See:
 #   http://revel.github.io/manual/testing.html
-module.testrunner = github.com/revel/modules/testrunner
+module.testrunner = github.com/wiselike/revel-modules/testrunner
 
 
 # Where to log the various Revel logs

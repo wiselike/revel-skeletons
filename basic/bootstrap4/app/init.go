@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/revel/revel"
-	_ "github.com/revel/modules"
+	"github.com/wiselike/revel"
+	_ "github.com/wiselike/revel-modules"
 
 )
 
@@ -42,7 +42,7 @@ func init() {
 
 // HeaderFilter adds common security headers
 // There is a full implementation of a CSRF filter in
-// https://github.com/revel/modules/tree/master/csrf
+// https://github.com/wiselike/revel-modules/tree/master/csrf
 var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {
 	c.Response.Out.Header().Add("X-Frame-Options", "SAMEORIGIN")
 	c.Response.Out.Header().Add("X-XSS-Protection", "1; mode=block")
